@@ -1,2 +1,2 @@
 # Drug-Drug-interaction
-A NLP approch for DDI prediction
+A NLP approach for DDI prediction
