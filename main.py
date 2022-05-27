@@ -14,8 +14,8 @@ input_shape = 128
 output_shape=68
 model_predict = ready_model()
 
-model_predict.load_weights('F:\Drugbank_inter\model/')
-labels = pd.read_csv('F:\Drugbank_inter\data\labels.csv')
+model_predict.load_weights('model/')
+labels = pd.read_csv('data\labels.csv')
 
 seq_len = 128
 tokenizer = RobertaTokenizer.from_pretrained('DeepChem/ChemBERTa-77M-MLM');
@@ -69,6 +69,3 @@ if __name__ == '__main__':
     predict = model_predict.predict([d1_ids, d2_ids, d1_mask, d2_mask])
     number = tf.argmax(predict, axis = 1)
     print(labels['label_name'][number])
-
-
-
