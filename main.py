@@ -7,9 +7,9 @@ from transformers import RobertaTokenizer
 import argparse
 from model import ready_model
 import warnings
+import logging
 warnings.filterwarnings('ignore')
-
-
+logging.getLogger("pytorch_transformers.tokenization_utils").setLevel(logging.ERROR)
 input_shape = 128
 output_shape=68
 model_predict = ready_model()
