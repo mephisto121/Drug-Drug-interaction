@@ -68,4 +68,6 @@ if __name__ == '__main__':
     
     predict = model_predict.predict([d1_ids, d2_ids, d1_mask, d2_mask])
     number = tf.argmax(predict, axis = 1)
+    print("---------------------------------------------------------------------------------")
+    print(f"The labels is equal to {number}")
     print(labels['label_name'][number].values)
