@@ -15,7 +15,7 @@ output_shape=68
 model_predict = ready_model()
 
 model_predict.load_weights('model/')
-labels = pd.read_csv('data\labels.csv')
+labels = pd.read_csv('data/labels.csv')
 
 seq_len = 128
 tokenizer = RobertaTokenizer.from_pretrained('DeepChem/ChemBERTa-77M-MLM');
