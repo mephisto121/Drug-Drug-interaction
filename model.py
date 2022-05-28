@@ -34,6 +34,4 @@ def model(input_shape, output_shape):
 
 def ready_model():
     model_train = model(input_shape, output_shape)
-    model_train.layers[4].trainable = False
-    model_train.layers[5].trainable = False
     return model_train
