@@ -14,7 +14,7 @@ input_shape = 128
 output_shape=68
 model_predict = ready_model()
 
-model_predict.load_weights('model.tf')
+model_predict.load_weights('model/model.tf')
 labels = pd.read_csv('data/labels.csv')
 
 seq_len = 128
