@@ -13,8 +13,12 @@ logging.getLogger("pytorch_transformers.tokenization_utils").setLevel(logging.ER
 input_shape = 128
 output_shape=68
 model_predict = ready_model()
+optimizer = tf.keras.optimizers.Adam(learning_rate = 0.001)
+loss = tf.keras.losses.SparseCategoricalCrossentropy()
+metrics = tf.keras.metrics.SparseCategoricalAccuracy('accuracy')
 
-model_predict.load_weights('model/model.tf')
+model_predict.compile(optimizer = optimizer, loss = loss, metrics = metrics)
+model_predict.load_weights('model\model.tf\variables\checkpoint')
 labels = pd.read_csv('data/labels.csv')
 
 seq_len = 128
