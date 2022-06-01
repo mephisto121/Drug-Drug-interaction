@@ -6,4 +6,4 @@ The original dataset was downloaded from <a href = 'https://tdcommons.ai/multi_p
 The mlm model developed by <a href = "https://huggingface.co/DeepChem/ChemBERTa-77M-MLM">deepchem</a> was used as both of the encoder parts.
 
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11dlgsSbPWoRvkHd3CJWWMUm_kaPEvZlV#scrollTo=CL44Y7Tri1u6)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11dlgsSbPWoRvkHd3CJWWMUm_kaPEvZlV?usp=sharing)
